@@ -1,0 +1,23 @@
+{
+  "appId": "com.example.app",
+  "productName": "Lisa",
+  "copyright": "Copyright © BioTuring",
+  "directories": {
+    "output": "release/"
+  },
+  "linux": {
+    "target": [
+      "AppImage"
+    ],
+    "category": "your.app.category.type"
+  },
+  "dmg": {
+    "title": "${productName}",
+    "sign": true
+  },
+  "publish": {
+    "provider": "s3",
+    "bucket": "bioturingdev1",
+    "region": "ap-southeast-1"
+  }
+}

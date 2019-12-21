@@ -1,0 +1,24 @@
+{
+  "name": "electron-webpack-quick-start",
+  "version": "2.100.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "npm run compile",
+    "build:publish": "npm run compile && electron-builder --publish always",
+    "build:local": "npm run compile && electron-builder --publish always",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+  },
+  "dependencies": {
+    "electron-log": "^4.0.0",
+    "electron-updater": "^4.2.0",
+    "source-map-support": "^0.5.12"
+  },
+  "devDependencies": {
+    "electron": "5.0.6",
+    "electron-builder": "^21.0.11",
+    "electron-webpack": "^2.7.4",
+    "webpack": "~4.35.3"
+  }
+}
